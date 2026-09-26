@@ -38,6 +38,7 @@
     "validate:test-policy": "node scripts/validate-test-policy.mjs"
   },
   "dependencies": {
+    "@swc/helpers": "^0.5.17",
     "lucide-react": "^1.30.0",
     "motion": "13.0.0",
     "next": "16.2.11",
@@ -46,8 +47,8 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.12.1",
-    "@playwright/test": "1.62.0",
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
     "@storybook/addon-a11y": "10.5.5",
     "@storybook/nextjs-vite": "10.5.5",
     "@tailwindcss/postcss": "^4",
@@ -65,6 +66,7 @@
     "eslint-plugin-storybook": "^10.5.5",
     "globals": "^17.8.0",
     "jsdom": "30.0.1",
+    "playwright": "1.63.0",
     "prettier": "^3.9.6",
     "storybook": "10.5.5",
     "tailwindcss": "^4",
