@@ -186,8 +186,10 @@ export function PatientStepInsideCarousel() {
   const fetalLabelY = useTransform(scrollYProgress, [0.54, 0.64], ["-40svh", "0svh"], {
     clamp: true,
   });
-  const fetalLabelOpacity = useTransform(scrollYProgress, [0.53, 0.57], [0, 1], { clamp: true });
-  const fetalNarrativeOpacity = useTransform(scrollYProgress, [0.64, 0.67], [0, 1], {
+  const fetalLabelOpacity = useTransform(scrollYProgress, [0.53, 0.57, 1], [0, 1, 1], {
+    clamp: true,
+  });
+  const fetalNarrativeOpacity = useTransform(scrollYProgress, [0.64, 0.67, 1], [0, 1, 1], {
     clamp: true,
   });
   const imageFrameScale = useTransform(smoothApproachProgress, [0, 1], [0.7, 1]);
